@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .nav
+        a(href="/")
+            button(class='button') &larr; Back
+    .workout-container
+        each workout in workouts
+            .card
+                p= 'Weight: ' + workout.weight + 'lbs'
+                p= 'Fat Percentage: ' + workout.fat_percentage + '%'
+                p= 'Muscle mass: ' + workout.muscle_mass + 'lbs'
+                h4= 'Date: ' + workout.date.toDateString()

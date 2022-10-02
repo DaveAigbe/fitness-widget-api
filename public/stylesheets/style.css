@@ -1,0 +1,80 @@
+@import "https://fonts.googleapis.com/css?family=IBM Plex Sans";
+
+/* || INDEX || */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'IBM Plex Sans', serif;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(131,58,180);
+  background: linear-gradient(150deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(209,122,0,1) 100%);
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+/* || Items container */
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* || Main title */
+
+.container h1 {
+  font-size: clamp(40px, 5vw, 60px)
+}
+
+/* || Sub text */
+
+.container p {
+  font-weight: bold;
+}
+
+/* || Buttons */
+
+.button{
+  background-color: rgba(131,58,180,1);
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.34);
+  border-radius: 20px;
+}
+.button:hover{
+  background-color: rgb(83, 47, 105);
+}
+
+/* || WORKOUTS || */
+
+.nav {
+  position: absolute;
+  top: 40px;
+  right: 40px
+}
+
+.workout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  color: white;
+  text-align: center;
+  background-color: #22434f;
+  border: 1px solid black;
+  box-shadow: 0 15px 15px 15px rgba(0, 0, 0, 0.34);
+  padding: 15px;
+  border-radius: 20px;
+}
